@@ -16,6 +16,3 @@ function init() {
 }
 
 init();
-
-// *** capital letters -->make it not working on gh-pages
-// even folder names
