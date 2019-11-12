@@ -1,16 +1,45 @@
-@import "status-bar.css";
-@import "nav.css";
-@import "chats.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import "reset.css";
-
-html,
-body {
-  margin: 0;
-  padding: 0 10px;
-}
+@import "status-bar.css";
+@import "nav-bar.css";
+@import "header.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  padding: 0px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  padding: 0px 20px;
+}
+
+.header-wrap {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  /* border-bottom: 1px solid #f7f7f7; */
+  box-shadow: 0px 8px 30px 1px rgba(50, 50, 93, 0.05);
+}
+
+.status-bar {
+  padding: 10px 20px 0px 20px;
 }
 
 a {
@@ -18,22 +47,79 @@ a {
   text-decoration: none;
 }
 
-/* avatar */
-.avatar-big {
-  /*friends-top*/
-  width: 70px;
-  border-radius: 40%;
-  margin-right: 15px;
+main {
+  animation: fadeIn 0.5s ease-in-out;
+  /* background-color: red; */
+  height: 90vh;
+  margin-top: 130px;
 }
-.avatar-m {
-  /*chats(index) */
-  width: 50px;
-  border-radius: 40%;
-  margin-right: 15px;
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-.avatar-s {
-  /*chat , friends-bottom*/
-  width: 40px;
-  border-radius: 40%;
-  margin-right: 15px;
+
+/* icons on navi , header */
+.header .header__icon,
+.nav i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* titles of icons on main */
+.more .more__btn-title,
+.suggestion .suggestion__title,
+.find .header-btn__title,
+.find span.title-add {
+  margin-top: 10px;
+  opacity: 0.6;
+  font-size: 13px;
+  width: 60px;
+  text-align: center;
+}
+
+/* title sizes on main */
+
+.friend__add-btn {
+  font-size: 14px;
+}
+
+.show-avatar {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+.show-avatar img {
+  width: 100px;
+  margin-left: calc(70% - 50px);
+}
+
+.show-avatar img {
+  animation: popup-avatar 1s ease-in-out 0.4s;
+  opacity: 0;
+}
+
+@keyframes popup-avatar {
+  0% {
+  }
+  30% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+  100% {
+  }
 }

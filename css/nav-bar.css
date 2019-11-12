@@ -1,0 +1,88 @@
+.nav {
+  z-index: 2;
+  background-color: #fcfcfc;
+  position: fixed;
+  width: 100%;
+  padding: 20px 30px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+
+  transform: translateY(80px);
+  animation: showNav 0.5s ease-in-out forwards 0.2s;
+}
+
+@keyframes showNav {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav .nav__list {
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list-item i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav__list-item:hover i {
+  transform: scale(1.4);
+}
+
+.nav__list-item {
+  padding: 10px;
+}
+.nav__list-item .toptitle {
+  opacity: 0;
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  text-align: center;
+  font-size: 11px;
+  width: 60px;
+  transition: opacity 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.nav__list-item:hover .toptitle {
+  opacity: 0.6;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  z-index: 5;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 14px;
+  background-color: #dc5d46;
+  color: white;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* 
+body:hover .show-avatar {
+  z-index: -1;
+  position: absolute;
+  bottom: -80px;
+  right: 50px;
+  width: 30%;
+  animation: popup-avatar 0.6s ease-in-out forwards;
+  opacity: 0;
+} */

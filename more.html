@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/8c4ed22fd7.js"></script>
-    <title>Friends | Kakao Clone</title>
+    <title>More | Kakao Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -29,11 +29,14 @@
 
       <header class="header">
         <div class="header__header-column">
-          <h1 class="header__title">Friends</h1>
+          <h1 class="header__title">More</h1>
         </div>
         <div class="header__header-column">
           <span class="header__icon">
             <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-qrcode"></i>
           </span>
           <span class="header__icon">
             <a href="settings.html">
@@ -44,59 +47,82 @@
       </header>
     </div>
 
-    <main class="friends">
-      <header class="friends__header">
+    <main class="more">
+      <header class="more__header">
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img
-              src="images/avatar.jpg"
-              alt=""
-              class="g-avatar friend__avatar"
-            />
+            <img src="images/avatar.jpg" class="friend__avatar g-avatar" />
             <div class="friend__content">
-              <span class="friend__name">Frodo</span>
-              <span class="friend__status">kokoa friends</span>
+              <span class="friend__name">
+                Lion
+              </span>
+              <span class="friend__status">
+                liong@animals.com
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__add">
+              <!-- <div class="line">------------</div> -->
+              <i class="fas fa-pen-alt"></i>
             </div>
           </div>
         </div>
+
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="far fa-laugh fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Emoticons
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fas fa-palette fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Themes
+            </span>
+          </li>
+
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fab fa-korvue fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Account
+            </span>
+          </li>
+        </ul>
       </header>
 
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus Friend</h5>
-        <ul class="friends__list">
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="g-avatar" />
-              <div class="friend__content">
-                <span class="friend__name">Kokoa Friends</span>
-              </div>
-            </div>
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggeestions</h5>
+        <ul class="more__suggestions-list">
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao Story</span>
           </li>
-        </ul>
-      </div>
 
-      <div class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <ul class="friends__list">
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="g-avatar" />
-              <div class="friend__content">
-                <span class="friend__name">Lion</span>
-                <span class="friend__status">nomadCoders</span>
-              </div>
-            </div>
-            <div class="friend__column">
-              <div class="friend__now-listening">
-                <span>
-                  지독하게-FTISLAND
-                </span>
-                <i class="fas fa-play"></i>
-              </div>
-            </div>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon beer">
+              <i class="fas fa-beer fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao Friends</span>
+          </li>
+
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-chess-knight fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Friends Gem</span>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
 
     <nav class="nav">
@@ -104,7 +130,7 @@
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
             <span class="toptitle">user</span>
-            <i class="fas fa-user"></i>
+            <i class="far fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">

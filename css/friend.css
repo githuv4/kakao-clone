@@ -1,0 +1,61 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----avatar------ */
+
+/* 붙이면 둘다가진 엘리먼트에만 적용 */
+.g-avatar.friend__avatar {
+  width: 60px;
+}
+
+.m-avatar.friend__avatar {
+  width: 50px;
+  border-radius: 40%;
+}
+
+.g-avatar {
+  width: 45px;
+  border-radius: 40%;
+}
+
+.friend .g-avatar,
+.m-avatar {
+  margin-right: 10px;
+}
+
+/* ---------------- */
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text,
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+.friend .friend__song-title {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.friend__add {
+  font-size: 20px;
+}

@@ -1,0 +1,138 @@
+.more .more__btn-list,
+.more .more__suggestions-list {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  /* background-color: lightgray; */
+}
+
+.more .more__suggestions-list {
+  margin-top: 20px;
+}
+
+.more .more__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  /* margin-right: 25px; */
+}
+
+.more .more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+
+.more .more__title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.more .suggestion__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e212;
+}
+
+.suggestion__icon i {
+  font-size: 25px;
+  color: white;
+}
+
+/* ------------------- */
+.friend__add {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px dashed lightgray;
+  border-radius: 0px;
+  margin-right: 6px;
+  cursor: pointer;
+  /* background-color: rgb(233, 233, 233); */
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsIsStBClYD54Ql6sctcjOEzhbkrdtVBPTq1BCD2KB6lRCkKJr); */
+  /* background-size: cover; */
+}
+
+/* .friend__add .line {
+  position: absolute;
+  line-height: 10px;
+  opacity: 0.3;
+  top: 3px;
+  left: 2px;
+  width: 35px;
+} */
+
+.friend__add .fa-pen-alt {
+  position: absolute;
+  top: -9px;
+  animation: draw 3s infinite ease-in-out forwards;
+}
+
+@keyframes draw {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  28% {
+    transform: translate(25px, 0px);
+  }
+  30% {
+    transform: translate(0, 10px);
+  }
+  58% {
+    transform: translate(25px, 10px);
+  }
+  60% {
+    transform: translate(0, 20px);
+  }
+  88% {
+    transform: translate(25px, 20px);
+  }
+  100% {
+    transform: translate(25px, 20px);
+  }
+}
+
+.friend__add:hover {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* animation: circle 0.2s ease-in-out forwards; */
+  margin-right: 6px;
+  border: none;
+  /* color: white; */
+  background-color: #ffef61;
+}
+
+.friend__add:hover .fa-pen-alt {
+  animation: none;
+  top: 14px;
+  left: 14px;
+  transform: translate(-5px, -5px);
+  transform: scale(1.2);
+  transition: transform 1s ease-in-out;
+}
+
+/* @keyframes circle {
+  from {
+    border-radius: 0;
+  }
+  to {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+} */

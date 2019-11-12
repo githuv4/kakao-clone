@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/8c4ed22fd7.js"></script>
-    <title>Friends | Kakao Clone</title>
+    <title>Find | Kakao Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -29,7 +29,7 @@
 
       <header class="header">
         <div class="header__header-column">
-          <h1 class="header__title">Friends</h1>
+          <h1 class="header__title">Find</h1>
         </div>
         <div class="header__header-column">
           <span class="header__icon">
@@ -44,59 +44,65 @@
       </header>
     </div>
 
-    <main class="friends">
-      <header class="friends__header">
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img
-              src="images/avatar.jpg"
-              alt=""
-              class="g-avatar friend__avatar"
-            />
-            <div class="friend__content">
-              <span class="friend__name">Frodo</span>
-              <span class="friend__status">kokoa friends</span>
-            </div>
-          </div>
-        </div>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-list">
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              QR Code
+            </span>
+          </li>
+
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-address-book fa-2x"></i>
+            </span>
+            <span class="header-btn__title"> Add by Contacts</span>
+          </li>
+
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-passport fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Add by Id
+            </span>
+          </li>
+
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-envelope-open-text fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Invite
+            </span>
+          </li>
+        </ul>
       </header>
 
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus Friend</h5>
-        <ul class="friends__list">
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="g-avatar" />
-              <div class="friend__content">
-                <span class="friend__name">Kokoa Friends</span>
-              </div>
+      <ul class="find__recommended">
+        <h5 class="find__title">
+          Recommended Friends
+        </h5>
+        <li class="find__friend friend">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="chat__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Kim
+              </span>
             </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <ul class="friends__list">
-          <li class="friends__friend friend">
-            <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="g-avatar" />
-              <div class="friend__content">
-                <span class="friend__name">Lion</span>
-                <span class="friend__status">nomadCoders</span>
-              </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus"></i>
             </div>
-            <div class="friend__column">
-              <div class="friend__now-listening">
-                <span>
-                  지독하게-FTISLAND
-                </span>
-                <i class="fas fa-play"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
@@ -104,7 +110,7 @@
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
             <span class="toptitle">user</span>
-            <i class="fas fa-user"></i>
+            <i class="far fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
