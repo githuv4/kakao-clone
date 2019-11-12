@@ -34,7 +34,6 @@ body {
   left: 0px;
   z-index: 2;
   border-bottom: 1px solid rgb(238, 238, 238);
-  /* border-bottom: 1px solid #f7f7f7; */
   box-shadow: 0px 8px 30px 1px rgba(50, 50, 93, 0.05);
 }
 
@@ -49,7 +48,6 @@ a {
 
 main {
   animation: fadeIn 0.5s ease-in-out;
-  /* background-color: red; */
   height: 90vh;
   margin-top: 130px;
 }
