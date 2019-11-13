@@ -48,6 +48,7 @@
   left: -3px;
 }
 .wrapper-multi-avatar .multi-avatar.a4 {
+  z-index: 3;
   bottom: -3px;
   right: -3px;
 }
