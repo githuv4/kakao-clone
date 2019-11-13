@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.chats .friend {
+  margin-bottom: 20px;
+}
+
 /* ----avatar------ */
 
 /* 붙이면 둘다가진 엘리먼트에만 적용 */
@@ -24,6 +28,28 @@
 .friend .g-avatar,
 .m-avatar {
   margin-right: 10px;
+}
+
+.wrapper-multi-avatar {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /* background-color: lightgray; */
+}
+.wrapper-multi-avatar .multi-avatar {
+  position: absolute;
+  width: 75%;
+  border-radius: 40%;
+  border: 3px solid white;
+}
+
+.wrapper-multi-avatar .multi-avatar.a1 {
+  top: -3px;
+  left: -3px;
+}
+.wrapper-multi-avatar .multi-avatar.a4 {
+  bottom: -3px;
+  right: -3px;
 }
 
 /* ---------------- */
@@ -59,3 +85,5 @@
 .friend__add {
   font-size: 20px;
 }
+
+/* ---------------- */
