@@ -28,7 +28,7 @@
 }
 
 .bigscreen span {
-  position: relative;
-  top: calc(50vh - 25px);
+  position: absolute;
+  top: calc(50vh - 50px);
   height: 100px;
 }
